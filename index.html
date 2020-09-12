@@ -4,16 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header class="head-navigate">
@@ -25,7 +21,7 @@
           >
           <ul class="site-nav list">
             <li class="item">
-              <a href="" class="link">Студия</a>
+              <a href="" class="link current">Студия</a>
             </li>
             <li class="item">
               <a href="./portfolio.html" class="link">Портфолио</a>
@@ -37,17 +33,17 @@
         </nav>
         <ul class="contact-nav list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link mail">
-              <svg class="link-convert" width="16px" height="10px">
-                <use href="./img/symbol-defs2.svg#icon-convert"></use>
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="link-convert" width="16px" height="12px">
+                <use href="./img/icon/symbol-defs2.svg#icon-convert"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="item tel">
-            <a href="tel:+30961111111" class="link tel">
+          <li class="item">
+            <a href="tel:+30961111111" class="link">
               <svg class="link-tel" width="10px" height="16px">
-                <use href="./img/symbol-defs2.svg#icon-smartphone"></use>
+                <use href="./img/icon/symbol-defs2.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -67,6 +63,11 @@
         <div class="container">
           <ul class="advantage-list list">
             <li class="item">
+              <button class="advantage-icon">
+                <svg class="icon-antenna" width="65px" height="70px">
+                  <use href="./img/icon/symbol-defs2.svg#icon-antenna"></use>
+                </svg>
+              </button>
               <h3>Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по
@@ -74,6 +75,11 @@
               </p>
             </li>
             <li class="item">
+              <button class="advantage-icon">
+                <svg class="icon-clock" width="67px" height="70px">
+                  <use href="./img/icon/symbol-defs2.svg#icon-clock"></use>
+                </svg>
+              </button>
               <h3>Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения
@@ -81,6 +87,11 @@
               </p>
             </li>
             <li class="item">
+              <button class="advantage-icon">
+                <svg class="icon-diagram" width="70px" height="54px">
+                  <use href="./img/icon/symbol-defs2.svg#icon-diagram"></use>
+                </svg>
+              </button>
               <h3>Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной
@@ -88,6 +99,11 @@
               </p>
             </li>
             <li class="item">
+              <button class="advantage-icon">
+                <svg class="icon-astronaut" width="55px" height="61px">
+                  <use href="./img/icon/symbol-defs2.svg#icon-astronaut"></use>
+                </svg>
+              </button>
               <h3>Современные технологии</h3>
               <p>
                 Значимость этих проблем настолько очевидна, что реализация
@@ -123,8 +139,10 @@
                 alt="foto Demjanenko"
                 width="270"
               />
-              <h3>Игорь Демьяненко</h3>
-              <p>Product Designer</p>
+              <div class="comands-names">
+                <h3>Игорь Демьяненко</h3>
+                <p>Product Designer</p>
+              </div>
               <ul class="button-list list">
                 <li>
                   <a
@@ -132,15 +150,19 @@
                     class="button-link"
                     aria-label="Ссылка на Instagram"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-instagram1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-instagram1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" class="button-link" aria-label="Ссылка на Twitter">
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-twitter1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-twitter1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -150,8 +172,10 @@
                     class="button-link"
                     aria-label="Ссылка на Facebook"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-facebook1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-facebook1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -161,8 +185,10 @@
                     class="button-link"
                     aria-label="Ссылка на Linkedin"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-linkedin1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-linkedin1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -170,8 +196,10 @@
             </li>
             <li class="comand-members">
               <img src="./img/repina.jpg" alt="foto Repina" width="270" />
-              <h3>Ольга Репина</h3>
-              <p>Frontend Developer</p>
+              <div class="comands-names">
+                <h3>Ольга Репина</h3>
+                <p>Frontend Developer</p>
+              </div>
               <ul class="button-list list">
                 <li>
                   <a
@@ -179,15 +207,19 @@
                     class="button-link"
                     aria-label="Ссылка на Instagram"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-instagram1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-instagram1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" class="button-link" aria-label="Ссылка на Twitter">
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-twitter1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-twitter1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -197,8 +229,10 @@
                     class="button-link"
                     aria-label="Ссылка на Facebook"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-facebook1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-facebook1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -208,8 +242,10 @@
                     class="button-link"
                     aria-label="Ссылка на Linkedin"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-linkedin1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-linkedin1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -217,8 +253,10 @@
             </li>
             <li class="comand-members">
               <img src="./img/tarasov.jpg" alt="foto Ermakov" width="270" />
-              <h3>Николай Тарасов</h3>
-              <p>Marketing</p>
+              <div class="comands-names">
+                <h3>Николай Тарасов</h3>
+                <p>Marketing</p>
+              </div>
               <ul class="button-list list">
                 <li>
                   <a
@@ -226,15 +264,19 @@
                     class="button-link"
                     aria-label="Ссылка на Instagram"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-instagram1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-instagram1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" class="button-link" aria-label="Ссылка на Twitter">
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-twitter1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-twitter1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -244,8 +286,10 @@
                     class="button-link"
                     aria-label="Ссылка на Facebook"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-facebook1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-facebook1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -255,8 +299,10 @@
                     class="button-link"
                     aria-label="Ссылка на Linkedin"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-linkedin1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-linkedin1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -264,8 +310,10 @@
             </li>
             <li class="comand-members">
               <img src="./img/ermakov.jpg" alt="foto Ermakov" width="270" />
-              <h3>Михаил Ермаков</h3>
-              <p>UI Designer</p>
+              <div class="comands-names">
+                <h3>Михаил Ермаков</h3>
+                <p>UI Designer</p>
+              </div>
               <ul class="button-list list">
                 <li>
                   <a
@@ -273,15 +321,19 @@
                     class="button-link"
                     aria-label="Ссылка на Instagram"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-instagram1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-instagram1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
                 <li>
                   <a href="" class="button-link" aria-label="Ссылка на Twitter">
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-twitter1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-twitter1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -291,8 +343,10 @@
                     class="button-link"
                     aria-label="Ссылка на Facebook"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-facebook1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-facebook1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -302,8 +356,10 @@
                     class="button-link"
                     aria-label="Ссылка на Linkedin"
                   >
-                    <svg class="icon-link">
-                      <use href="./img/symbol-defs2.svg#icon-linkedin1"></use>
+                    <svg class="icon-link" width="20px" height="20px">
+                      <use
+                        href="./img/icon/symbol-defs2.svg#icon-linkedin1"
+                      ></use>
                     </svg>
                   </a>
                 </li>
@@ -322,8 +378,8 @@
                 class="clients-link"
                 aria-label="Cсылка на сайт клиента№1"
               >
-                <svg class="clients-icon" width="19px" height="65px">
-                  <use href="./img/symbol-defs2.svg#icon-logo1"></use>
+                <svg class="clients-icon" width="45px" height="49px">
+                  <use href="./img/icon/symbol-defs2.svg#icon-logo1"></use>
                 </svg>
               </a>
             </li>
@@ -334,7 +390,7 @@
                 aria-label="Cсылка на сайт клиента№2"
               >
                 <svg class="clients-icon" width="40px" height="52px">
-                  <use href="./img/symbol-defs2.svg#icon-logo2"></use>
+                  <use href="./img/icon/symbol-defs2.svg#icon-logo2"></use>
                 </svg>
               </a>
             </li>
@@ -345,7 +401,7 @@
                 aria-label="Cсылка на сайт клиента№3"
               >
                 <svg class="clients-icon" width="41px" height="43px">
-                  <use href="./img/symbol-defs2.svg#icon-logo3"></use>
+                  <use href="./img/icon/symbol-defs2.svg#icon-logo3"></use>
                 </svg>
               </a>
             </li>
@@ -356,7 +412,7 @@
                 aria-label="Cсылка на сайт клиента№4"
               >
                 <svg class="clients-icon" width="80px" height="42px">
-                  <use href="./img/symbol-defs2.svg#icon-logo4"></use>
+                  <use href="./img/icon/symbol-defs2.svg#icon-logo4"></use>
                 </svg>
               </a>
             </li>
@@ -367,7 +423,7 @@
                 aria-label="Cсылка на сайт клиента№5"
               >
                 <svg class="clients-icon" width="59px" height="47px">
-                  <use href="./img/symbol-defs2.svg#icon-logo5"></use>
+                  <use href="./img/icon/symbol-defs2.svg#icon-logo5"></use>
                 </svg>
               </a>
             </li>
@@ -378,7 +434,7 @@
                 aria-label="Cсылка на сайт клиента№6"
               >
                 <svg class="clients-icon" width="88px" height="45px">
-                  <use href="./img/symbol-defs2.svg#icon-logo6"></use>
+                  <use href="./img/icon/symbol-defs2.svg#icon-logo6"></use>
                 </svg>
               </a>
             </li>
@@ -387,29 +443,56 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="main-contacts">
-        <nav>
-          <a href="./index.html" class="logo-link"
-            ><span class="logo-web">Web</span
-            ><span class="logo-studio-footer">Studio</span></a
-          >
-        </nav>
-        <address class="adress">
-          <span class="adress-name">г. Киев, пр-т Леси Украинки, 26<br /></span>
-          <a href="mailto:info@example.com" class="mail">info@example.com</a
-          ><br />
-          <a href="tel:+380991111111">+38 099 111 11 11</a>
-        </address>
-      </section>
-      <section class="networks">
-        <h3>ПРИСОЕДИНЯЙТЕСЬ</h3>
-        <ul class="networks-list list">
-          <li class="item"><a href=""></a></li>
-          <li class="item"><a href=""></a></li>
-          <li class="item"><a href=""></a></li>
-          <li class="item"><a href=""></a></li>
-        </ul>
-      </section>
+      <div class="container">
+        <div class="main-contacts">
+          <a href="./index.html" class="logo-link">
+            <span class="logo-web">Web</span>
+            <span class="logo-studio-footer">Studio</span>
+          </a>
+          <address class="adress">
+            <span class="adress-name"
+              >г. Киев, пр-т Леси Украинки, 26<br
+            /></span>
+            <a href="mailto:info@example.com" class="adress-mail"
+              >info@example.com</a
+            >
+            <a href="tel:+380991111111" class="adress-tel">+38 099 111 11 11</a>
+          </address>
+        </div>
+        <div class="networks">
+          <h3>ПРИСОЕДИНЯЙТЕСЬ</h3>
+          <ul class="networks-list list">
+            <li class="item">
+              <a href="">
+                <svg class="networks-icon" width="20px" height="20px">
+                  <use href="./img/icon/symbol-defs2.svg#icon-instagram2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <svg class="networks-icon" width="20px" height="20px">
+                  <use href="./img/icon/symbol-defs2.svg#icon-twitter2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <svg class="networks-icon" width="20px" height="20px">
+                  <use href="./img/icon/symbol-defs2.svg#icon-facebook2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <svg class="networks-icon" width="20px" height="20px">
+                  <use href="./img/icon/symbol-defs2.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
