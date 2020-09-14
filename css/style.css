@@ -15,6 +15,8 @@ html {
   --white-color: #ffffff;
   --second-background-color: #f5f4fa;
   --link-footer-color: rgba(255, 255, 255, 0.6);
+  --link-color: #afb1b8;
+  --network-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -68,6 +70,7 @@ body {
   padding: 0px;
   display: flex;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -202,9 +205,11 @@ body {
 }
 
 .advantage-icon {
-  display: block;
+  display: flex;
   width: 270px;
   height: 120px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   background-color: var(--second-background-color);
   border: 0px;
@@ -319,7 +324,7 @@ body {
 }
 
 .comands-names {
-  padding: 30px 59px 0px 60px;
+  padding: 30px 32px 30px 32px;
 }
 
 .comand-members {
@@ -328,11 +333,10 @@ body {
 
 .button-list {
   display: flex;
+  width: 206px;
+  height: 44px;
   margin-top: 16px;
-  justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
+  justify-content: center;
 }
 
 .button-link {
@@ -342,7 +346,7 @@ body {
   width: 44px;
   height: 44px;
   margin-right: 22px;
-  color: #afb1b8;
+  color: var(--link-color);
   border-radius: 50%;
 }
 
@@ -351,7 +355,7 @@ body {
 }
 
 .button-link:hover {
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
@@ -379,6 +383,8 @@ body {
 .clients-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .clients-item {
@@ -397,9 +403,9 @@ body {
   height: 90px;
   justify-content: center;
   border-radius: 4px;
-  outline: 1px solid #afb1b8;
+  outline: 1px solid var(--link-color);
   align-items: center;
-  color: #afb1b8;
+  color: var(--link-color);
 }
 
 .clients-link:hover {
@@ -480,6 +486,8 @@ body {
 .networks-list {
   display: flex;
   padding-left: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .networks-list .item {
@@ -492,7 +500,7 @@ body {
   padding: 0px;
   line-height: 0px;
   margin-right: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--network-color);
   border-radius: 50%;
 }
 
@@ -561,7 +569,7 @@ body {
   border: 1px solid #eeeeee;
 }
 
-.services-list .item:first-child {
+.services-list .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
